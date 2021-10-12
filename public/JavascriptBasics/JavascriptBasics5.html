@@ -1,0 +1,19 @@
+<!-- Write a program with variable hoisting(initialization first then declaration).-->
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Variable hoisting</title>
+</head>
+<body>
+<h3>Variable hoisting</h3>
+<p id="myclass"></p>
+
+
+<script>
+x=7;/*x is inialized before declaration*/
+document.getElementById("myclass").innerHTML=x;
+var x;//declaration
+</script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!--Add some more properties to an existing function using object prototypes. -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Prototype</title>
+</head>
+<body>
+<p id="myid"></p>
+
+<script type="text/javascript">
+/*constructor*/
+function person(first,last,age){
+	this.firstname=first;
+	this.lastname=last;
+	this.age=age;
+	
+}
+
+const emp1=new person("Max","Root",34);/*intializing object emp1 using person constructor*/
+person.prototype.fullname=function(){
+	return "Full Name:"+ this.firstname+" "+this.lastname;/*adding a method to an exsisting object constructor*/
+	
+};
+document.getElementById("myid").innerHTML=emp1.fullname();
+</script>
+</body>
+</html>

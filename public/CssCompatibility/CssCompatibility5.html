@@ -1,0 +1,85 @@
+<!-- Write a program of view-port for grid, media queries, image and video. -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1" name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Insert title here</title>
+<style type="text/css">
+*{
+box-sizing:border-box;
+
+}
+[class*="col-"]{
+
+float:left;
+padding:15px;
+border:1px solid red;
+width:100%;/* for device with the width less than 768px*/
+}
+
+.header{
+border:1px solid red;
+padding:15px;
+
+}
+
+
+@media only screen and (min-width:768px){
+/*for descktop*/
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+}
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+img{
+width:100%;
+height:auto;
+}
+video{
+width:100%;
+height:auto;
+}
+</style>
+</head>
+<body>
+<div class="header"> <h1>Viewport</h1></div>
+<div class="row">
+
+<div class="col-3">
+  <ul>
+    <li>The Flight</li>
+    <li>The City</li>
+    <li>The Island</li>
+    <li>The Food</li>
+  </ul>
+</div>
+
+<div class="col-9">
+<h2> 9th Column</h2>
+</div>
+<div class="col-8">
+<img src="../../im1.jpg" width ="600" height="300">
+
+</div>
+<div class="col-11">
+<video controls>
+<source src="https://pixabay.com/videos/screensaver-abstract-color-change-605/" type="video/mp4"/>
+<source src="https://pixabay.com/videos/screensaver-abstract-color-change-605/" type="video/ogg"/>
+</video>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!--Apply all of the below input restrictions
+disabled, max, maxlength, min, readonly, required, size, value-->
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title> FormElements3</title>
+</head>
+<body>
+<form>
+<fieldset>
+<legend>FormElements</legend>
+<label for="Name">FullName</label>
+<input type="text" id= "Name" name="Name" size="20" autocomplete="on" required><br><br><!-- size -->
+<label for="Pass">Password</label>
+<input type="password" id="Pass" name="Pass" maxlength="12"  minlength="8"><br> <!-- maxlength --><br><br>
+<label for="mycountry">Country</label>
+<input type="text" id="mycountry" name="mycountry" value="India" readonly><br><br>
+
+<h4>Please sect your gender</h4>
+
+<input type="radio" id="Male" name="gender" value="Male">
+<label for ="Male">Male</label><br>
+
+<input type="radio" id="Female" name="gender" value="Female"><!--value-->
+<label for ="Female">Female</label><br>
+
+<input type="radio" id="Other" name="gender" value="Other">
+<label for ="Other">Other</label><br><br>
+
+<h4> Skills</h4>
+<input type="checkbox" id="C" name="C" value="C">
+<label for="C">C</label><br>
+<input type="checkbox" id="C++" name="C++" value="C++">
+<label for="C++">C++</label><br>
+<input type="checkbox" id="JAVA" name="JAVA" value="JAVA">
+<label for="JAVA">JAVA</label><br>
+<input type="checkbox" id="Python" name="Python" value="Python">
+<label for="Python">Python</label><br>
+<input type="checkbox" id="Other" name="Other" value="Other">
+<label for="Other">Other</label><br><br>
+
+<!--FormElement2.html start-->
+<label for="Age">Age</label>
+<input type="number" id="Age" name="Age" min="1" max="60" ><br><br><!-- max,min -->
+
+<label for="ran">Range(0 to 50)</label>
+<input type="range" id="ran" name="ran" min="1" max="50" disabled><br><br><!--disabled-->
+
+<label for="favcol"> Select a colour</label>
+<input type="color" id="favcol" name="favcol"><br><br>
+
+<label for="bday"> Date of birth</label>
+<input type="date" id="bday" name="bday"><br><br>
+
+<label for="myfile"> Select a file</label>
+<input type="file" id="myfile" name="myfle"><br><br>
+
+<label for="mytime">Select time</label>
+<input type="time" id="mytime" name="mytime"><br><br>
+
+<label for="mymonth">Select month</label>
+<input type="month" id="mymonth" name="mymonth"><br><br>
+
+<label for="myweek">Select week</label>
+<input type="week" id="myweek" name="myweek"><br><br>
+
+<label for="myemail"> Email</label>
+<input type="email" id="myemail" name="myemail"><br><br>
+
+
+<br><br><input type="button" id="Click" name="Click" value="Click Me!"  onclick="alert('Hello World!!')"><br><br>
+
+<input type="reset" value="Reset"><br><br>
+
+<input type="submit" value="Submit" style="margin-left:50%">
+
+</fieldset>
+</form>
+
+</body>
+</html>

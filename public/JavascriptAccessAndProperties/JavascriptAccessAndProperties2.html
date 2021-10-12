@@ -1,0 +1,28 @@
+<!-- Invoke a function using call() and apply(). Also Spot the difference between them. -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Call and Apply</title>
+</head>
+<body>
+<h3>Call and Apply</h3>
+<p id="myid"></p>
+<p id="myid1"></p>
+
+<script type="text/javascript">
+const person1={ firstname:"abc",lastname:"xyz"};
+const person={
+		fullname:function(city,country){
+			return this.firstname+" "+this.lastname+" " + city+", "+country;
+			
+		}
+}
+document.getElementById("myid").innerHTML=person.fullname.call(person1, "AAA","BBB");//The call() method takes arguments separately.
+
+document.getElementById("myid1").innerHTML=person.fullname.apply(person1, ["AAA","BBB"]);//The call() method takes arguments separately.
+
+
+</script>
+</body>
+</html>

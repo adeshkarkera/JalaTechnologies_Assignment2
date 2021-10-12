@@ -1,0 +1,24 @@
+<!-- Add an event listener to a button. When we click on it should display current date and time. -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Event Listener</title>
+</head>
+<body>
+<p><small>*Please click bellow button to get today's date</small></p>
+<button id="btn">Date</button>
+<p id="myid"></p>
+
+
+<script type="text/javascript">
+
+document.getElementById("btn").addEventListener("click", myfunction);
+
+function myfunction(){
+	document.getElementById("myid").innerHTML=Date();
+	
+}
+</script>
+</body>
+</html>

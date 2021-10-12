@@ -1,0 +1,27 @@
+<!-- Create a JSON object and access it using dot notation. -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>JSON Object Literals</title>
+</head>
+<body>
+<p id="myid"></p>
+<script>
+const myjson='{"name":"Max", "age":24, "address":null}';/*JSON object literal*/
+const myobj=JSON.parse(myjson);
+
+var detail="";
+
+for(var i in myobj){
+	
+	detail += i +": "+ myobj[i]+ ", ";
+}
+
+document.getElementById("myid").innerHTML=detail;
+
+</script>
+
+
+</body>
+</html>

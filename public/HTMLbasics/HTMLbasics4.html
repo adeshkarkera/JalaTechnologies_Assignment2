@@ -1,0 +1,113 @@
+<!-- Use pseudo classes and elements into your webpage.-->
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+a:link{
+text-decoration:none;
+}
+a:visited{
+text-decoration:none;
+}
+a:hover{
+text-decoration:underline;
+
+}
+a:active{
+text-decoration:underline;
+}
+
+#htbasic {
+text-align:center;
+padding:40px;
+
+}
+
+.head{
+padding:20px;
+}
+
+.pseudoclass{
+margin-left:30px;
+}
+
+div.pseudo p{
+display:none;
+}
+div.pseudo:hover p{
+display:block;
+}
+#img{
+display:block;
+margin-left:auto;
+margin-right:auto;
+width:50%;
+}
+</style>
+<meta charset="UTF-8">
+<title>HTML Basics</title>
+</head>
+<body>
+<div id="htbasic">
+<h1> HTML Basics</h1>
+<p><b>Designing a basic </b><span 	style= "color:red"> web page</span></p>
+</div>
+<div style=" font-size:110%; text-align:right; margin-left:auto; padding:20x" >
+<a style="color:black" href="#img" >Skip to Image</a>
+</div>
+<h3 class="head">Italic and bold tag</h3>
+<div class="pseudoclass">
+<p><i>Using Italic tag.</i>
+
+<b>Using bold tag.</b><br></p>
+</div>
+<hr>
+
+<h3 class= "head">Anchor tag</h3>
+<div class="pseudoclass">
+<a title="click to visit JALA Academy website" href=" https://java.jalaacademy.com/UI/ui_html5.html" target="_blank">JALA Academy</a>
+</div>
+<hr>
+
+<h3 class="head"> Unordered list tag</h3>
+<div class="pseudoclass">
+<ul>
+<li>Naruto</li>
+<li>One piece</li>
+<li>seven deadly sins</li>
+</ul>
+</div>
+<hr>
+
+<h3 class="head">Label tag</h3>
+<div class="pseudoclass">
+<form action="">
+<input type= "radio" id="Male" name="Gender" value="Male" >
+<label for="Male">MALE</label><br>
+<input type= "radio" id="Female" name="Gender" value="Female">
+<label for="Female">FEMALE</label>
+</form>
+</div>
+<hr>
+
+<h3 class="head">Blockqoute tag</h3>
+<div class="pseudoclass">
+<blockquote cite="https://jalaacademy.com/">No Trainers are needed, because we believe in your capabilities more than Trainers. Believe in yourself not the Trainers. Sucessfully placed 1000s without Trainers.</blockquote>
+</div>
+<hr>
+
+<div class="pseudo">
+<h3>Please hover over here</h3>
+<p>Pseudo class example</p>
+</div>
+<hr> 
+
+<h3 class="head">Image tag</h3>
+<div>
+<img id="img" src="https://images.livemint.com/img/2021/03/19/600x338/Harley_Roadster_300cc_1616142873009_1616142882330.PNG" alt="" height="300" width="400">
+</div>
+
+
+
+</body>
+</html>

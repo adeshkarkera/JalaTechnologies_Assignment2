@@ -1,0 +1,36 @@
+<!--Write a program with FOR/IN loop.-->
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>For/IN loops</title>
+</head>
+<body>
+<h3>Array</h3>
+<p id="myclass"></p>
+<h3>Object</h3>
+<p id="myclass1"></p>
+
+<script>
+const arr=["kiwi","Orange","Banana","Mango","Apple"];
+const user={Name:"Oggy", UId:"001"};
+var fruit="<ul>";
+for(var i=0;i<arr.length;i++){
+	
+	fruit +="<li>"+ arr[i] + "</li>";
+	document.getElementById("myclass").innerHTML=fruit;
+
+}
+fruit="</ul>";
+
+var detail="<ul>";
+for(var i in user)
+	{
+	detail +="<li>"+ user[i] +"</li>";
+	}
+document.getElementById("myclass1").innerHTML=detail;
+
+detail="</ul>";
+</script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!-- Create an array consisting of fruits names and when we click on a button sort it in descending order.-->
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Javascript Basics</title>
+</head>
+<body>
+
+<h3>Array</h3>
+<p id="myclass"></p>
+
+<p><small>*Please click the below button to sort the array</small></p>
+<button onclick="myfunction()">Sort</button>
+<script>
+const arr=["kiwi","Orange","Banana","Mango","Apple"];
+
+var fruits="<ul>";
+for(var i=0;i<arr.length;i++){
+	
+	fruits +="<li>"+ arr[i] + "</li>";
+	document.getElementById("myclass").innerHTML=fruits;
+
+}
+fruits="</ul>";
+
+function myfunction(){
+arr.sort();
+arr.reverse();
+var fruit="<ul>";
+for(var i=0;i<arr.length;i++){
+	
+	fruit +="<li>"+ arr[i] + "</li>";
+	document.getElementById("myclass").innerHTML=fruit;
+
+}
+fruits="</ul>";
+}
+
+
+
+
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!-- Create an object "person" with properties firstname and lastname. Display these properties using 2 different ways of accessing. -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Object in javascript</title>
+</head>
+<body>
+<p id="myid1"></p>
+<p id="myid2"></p>
+
+
+
+<script>
+const person={firstname:"Uzumaki", lastname:"Naruto"}
+document.getElementById("myid1").innerHTML="First name: "+ person.firstname;
+document.getElementById("myid2").innerHTML="Last name: "+ person["lastname"];
+
+</script>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!-- Add positions to CSS block (static, relative, fixed, absolute and sticky). -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1" content="width:device-width; intial-scale:1">
+<title>Insert title here</title>
+<style type="text/css">
+div.static{
+position:static;
+width:100px;
+height:100px;
+background-color:red;
+text-align:center;
+color:white;
+
+}
+
+div.relative{
+position:relative;
+width:100px;
+height:100px;
+background-color:red;
+text-align:center;
+color:white;
+margin-top:100px;
+
+}
+div.fixed{
+position:fixed;
+width:100px;
+height:100px;
+background-color:black;
+text-align:center;
+color:white;
+z-index:1;
+}
+div.absolute{
+position:absolute;
+width:100px;
+height:100px;
+background-color:red;
+text-align:center;
+color:white;
+margin-top:100px;
+margin-bottom:100px;
+}
+div.sticky{
+position:sticky;
+width:100px;
+height:100px;
+background-color:red;
+color:white;
+top:10px;
+z-index:1;
+}
+</style>
+</head>
+<body>
+
+<div style="height:2000px;margin-left:50%;">
+<div class="static"> pasition:static</div><br><br>
+<div class="relative">position:relative</div><br><br>
+<div class="fixed">position:fixed</div><br><br>
+<div class="sticky">position:sticky </div><br><br>
+<div class="absolute">position:absolute</div><br><br>
+
+</div>
+
+
+
+</body>
+</html>

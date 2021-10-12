@@ -1,0 +1,35 @@
+<!-- Apply different visibility by an element (visibility: hidden, visible, collapse) and 
+use different types of display for an element (display: none, inline, block, contents, list-item) -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<style>
+table,th{
+border:2px solid black;
+}
+</style>
+</head>
+<body>
+<h2>Visibility Attribute</h2>
+<p style="visibility:hidden">visibility:hidden<p>
+<p style="visibility:visible">visibility:visible</p>
+<table>
+<tr>
+<th>UseId</th>
+<th>User name</th>
+</tr>
+<tr style="visibility:collapse">
+<td>001</td>
+<td>Oggy</td>
+</tr>
+</table>
+<h2>Display attribute</h2>
+<p>Display: none <span style="color:red;display:none">HELLO WORLD!</span>example</p>
+<p>Display: inline <span style="color:red;display:inline">HELLO WORLD!</span>example</p>
+<p>Display: block <span style="color:red;display:block">HELLO WORLD!</span>example</p>
+<p>Display: list-item <span style="color:red;display:list-item;list-style-position:inside;">HELLO WORLD!</span>example</p>
+
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!-- Show the javascript validation. When you click submit, the text box doesn't need to be empty.-->
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Javascript Validation</title>
+</head>
+<body>
+<form id="myform" action="" onsubmit="validateform()">
+<input id="myinput">
+<input type="submit" value="submit">
+</FORM>
+
+<script>
+
+var x;
+function validateform(){
+x=document.forms["myform"]["myinput"].value;
+if(x==""){
+	
+	alert("Please fill the given field");
+	return false;
+}
+}
+</script>
+</body>
+</html>

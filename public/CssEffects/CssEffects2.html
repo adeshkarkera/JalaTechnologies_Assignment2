@@ -1,0 +1,69 @@
+<!-- Use CSS animations (name,duration,iteration-count & delay) and paginations(Hoverable,with and without spaces). -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<style>
+h2{
+padding:5px;
+}
+
+div.animation{
+width:100px;
+height:100px;
+background-color:grey;
+animation-name:ex;
+animation-duration:5s;
+animation-delay:1s;
+animation-iteration-count:infinite;
+}
+@keyframes ex{
+0%{background-color:grey;margin-left:0px; margin-top:0px;}
+25%{background-color:red;margin-left:250px; margin-top:0px;}
+50%{background-color:green;margin-left:250px; margin-top:250px;}
+75%{background-color:blue;margin-left:0px; margin-top:250px;}
+100%{background-color:grey;left:0px; top:0px;}
+}
+
+.pagination{
+display:inline;
+}
+.pagination a{
+float:left;
+color:black;
+border: 1px solid #ddd;
+padding:8px 16px;
+text-decoration:none;
+margin:0 4px;/*we can emove margin to create a pagination without space*/
+transition: background-color 0.3s;
+}
+.pagination a.active{
+background-color: #4CAF50;
+color:white;
+border:1px solid  #4CAF50;
+}
+.pagination a:hover:not(.active){
+background-color:#ddd;
+}
+</style>
+</head>
+<body>
+<h2>Pagination</h2>
+<div class="pagination">
+<a href="#">&laquo;</a>
+<a href="#" class="active">1</a>
+<a href="#" >2</a>
+<a href="#" >3</a>
+<a href="#" >4</a>
+<a href="#" >&raquo;</a>
+</div><br><br>
+
+<h2>Animation</h2>
+<div style="height:250px; width:250px;display:block">
+<div class="animation"></div>
+</div>
+
+
+</body>
+</html>

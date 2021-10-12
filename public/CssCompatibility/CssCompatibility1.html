@@ -1,0 +1,79 @@
+<!-- Create a table and apply table-layout as fixed and none -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<style type="text/css">
+table,th,td{
+border:1px solid black;
+border-collapse:collapse;
+
+}
+.a{
+table-layout:none;
+width:30%;
+margin-bottom:30px;
+margin-left:35%;
+}
+.b{
+table-layout:fixed;
+width:30%;
+margin-bottom:30px;
+margin-left:35%;
+
+}
+</style>
+</head>
+<body>
+<h2 style="text-align:center">Table layout:none</h2>
+<table class="a">
+<tr>
+<th>USER ID</th>
+<th>USER NAME</th>
+<th>USER COUNTRY</th>
+</tr>
+<tr>
+<td>001</td>
+<td>OGGY</td>
+<td>USA</td>
+</tr>
+<tr>
+<td>002</td>
+<td>JAC</td>
+<td>UK</td>
+</tr>
+<tr>
+<td>003</td>
+<td>BOB</td>
+<td>INDIA</td>
+</tr>
+</table>
+
+<h2 style="text-align:center">Table layout:fixed</h2>
+
+<table class="b">
+<tr>
+<th>USER ID</th>
+<th>USER NAME</th>
+<th>UUSER COUNTRY</th>
+</tr>
+<tr>
+<td>001</td>
+<td>OGGY</td>
+<td>USA</td>
+</tr>
+<tr>
+<td>002</td>
+<td>JAC</td>
+<td>UK</td>
+</tr>
+<tr>
+<td>003</td>
+<td>BOB</td>
+<td>INDIA</td>
+</tr>
+</table>
+
+</body>
+</html>

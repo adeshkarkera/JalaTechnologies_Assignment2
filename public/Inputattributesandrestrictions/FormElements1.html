@@ -1,0 +1,51 @@
+<!-- Design the web page using all the below input attributes
+type =text, password, submit, reset, radio, checkbox, button, -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title> FormElements1</title>
+</head>
+<body>
+<form>
+<fieldset>
+<legend>FormElements</legend>
+<label for="Name">FullName</label>
+<input type="text" id= "Name" name="Name" ><br><br>
+<label for="Pass">Password</label>
+<input type="password" id="Pass" name="Pass" maxlength="12"  minlength="8"><br>
+
+<h4>Please sect your gender</h4>
+
+<input type="radio" id="Male" name="gender" value="Male">
+<label for ="Male">Male</label><br>
+
+<input type="radio" id="Female" name="gender" value="Female">
+<label for ="Female">Female</label><br>
+
+<input type="radio" id="Other" name="gender" value="Other">
+<label for ="Other">Other</label><br><br>
+
+<h4> Skills</h4>
+<input type="checkbox" id="C" name="C" value="C">
+<label for="C">C</label><br>
+<input type="checkbox" id="C++" name="C++" value="C++">
+<label for="C++">C++</label><br>
+<input type="checkbox" id="JAVA" name="JAVA" value="JAVA">
+<label for="JAVA">JAVA</label><br>
+<input type="checkbox" id="Python" name="Python" value="Python">
+<label for="Python">Python</label><br>
+<input type="checkbox" id="Other" name="Other" value="Other">
+<label for="Other">Other</label><br><br>
+
+<input type="button" id="Click" name="Click" value="Click Me!"  onclick="alert('Hello World!!')"><br><br>
+
+<input type="reset" value="Reset"><br><br>
+
+<input type="submit" value="Submit" style="margin-left:50%">
+
+</fieldset>
+</form>
+
+</body>
+</html>

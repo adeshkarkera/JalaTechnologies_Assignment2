@@ -1,0 +1,32 @@
+<!--Create a Counter with the help of getter and setter accessors.  -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Counter(Using setter and getter)</title>
+</head>
+<body>
+<h2>Counter(Using setter and getter)</h2>
+<h1 class="counter-display" style="text-align:center; border:1px solid black; background-color: #ddd; width:50px; height:50px; padding: 10px 20px;">0</h1>
+<button onclick="updateDisplay()"style="margin-left:15px;">Count</button>
+<script type="text/javascript" >
+const counter={
+	count:0,
+	set plusEle(plus){
+		
+		this.count+=plus;
+	},
+	get countEle(){
+		
+		return this.count;
+	}
+	
+};
+function updateDisplay(){
+counter.plusEle=1;
+document.querySelector('.counter-display').innerHTML=counter.countEle;
+}
+
+</script>
+</body>
+</html>
